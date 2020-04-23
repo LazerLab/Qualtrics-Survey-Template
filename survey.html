@@ -32,7 +32,7 @@ function initialize() {
   
   //Create an iframe called "qualFrame" that goes to the qualtrics URL and pass the testId and subjectID variables in the URL
   $("#qualFrame").attr("src",variables["survey_link"]+"&testId="+seed+"&subjectId="+myid);
-  $("#qualFrame").attr("height",variables["survey_height"]);
+  $("#qualFrame").height(variables["survey_height"]);
   $("#qualFrame").show();
 }
 </script>
